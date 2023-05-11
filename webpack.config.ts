@@ -2,7 +2,7 @@ import path from 'path'
 import webpack from 'webpack'
 import HtmlWebpackPlugin from 'html-webpack-plugin'
 
-const config = {
+const config: webpack.Configuration = {
   mode: 'development',
   module: {
     rules: [
