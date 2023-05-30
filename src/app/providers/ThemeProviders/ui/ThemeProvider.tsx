@@ -1,5 +1,5 @@
 import { FC, useMemo, useState } from "react";
-import { Theme, ThemeContext, getThemeLS, setThemeLS } from "./ThemeContext";
+import { Theme, ThemeContext, getThemeLS, setThemeLS } from "../lib/ThemeContext";
 
 const defaultTheme = getThemeLS() as Theme || Theme.LIGHT
 
