@@ -4,17 +4,20 @@ import { Navbar } from 'widgets/Navbar'
 import { classNames } from '../shared/lib/classNames'
 import { AppRouter } from './providers/router'
 import { Sidebar } from 'widgets/Sidebar'
+import { Suspense } from 'react'
 
 export default function App() {
   const { theme } = useTheme()
 
   return (
     <div className={classNames('app', {}, [theme])}>
-      <Navbar/>
-      <div className={'content'}>
-        <Sidebar/>
-        <AppRouter/>
-      </div>
+      <Suspense fallback={''}>
+        <Navbar/>
+        <div className={'content'}>
+          <Sidebar/>
+          <AppRouter/>
+        </div>
+      </Suspense>
     </div>
   )
 }
