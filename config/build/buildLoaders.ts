@@ -1,13 +1,13 @@
-import webpack from 'webpack'
+import type webpack from 'webpack'
 import MiniCssExtractPlugin from 'mini-css-extract-plugin'
-import { BuildOptions } from './types/config'
+import { type BuildOptions } from './types/config'
 
-export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
+export function buildLoaders ({ isDev }: BuildOptions): webpack.RuleSetRule[] {
   const babelLoader = {
     test: /\.(js|ts|jsx|tsx)$/,
     exclude: /node_modules/,
     use: {
-      loader: "babel-loader",
+      loader: 'babel-loader',
       options: {
         presets: ['@babel/preset-env']
       }
@@ -17,7 +17,7 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
   const typescriptsLoader = {
     test: /\.tsx?$/,
     use: 'ts-loader',
-    exclude: /node_modules/,
+    exclude: /node_modules/
   }
 
   const cssLoader = {
@@ -25,33 +25,33 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
     use: [
       isDev ? 'style-loader' : MiniCssExtractPlugin.loader,
       {
-        loader: "css-loader",
+        loader: 'css-loader',
         options: {
           modules: {
             auto: (resourcePath: string) => Boolean(resourcePath.includes('.module.')),
             localIdentName: isDev
               ? '[path][name]__[local]--[hash:base64:8]'
-              : '[hash:base64:8]',
-          },
-        },
+              : '[hash:base64:8]'
+          }
+        }
       },
-      "sass-loader",
-    ],
+      'sass-loader'
+    ]
   }
 
   const svgLoader = {
     test: /\.svg$/i,
     issuer: /\.[jt]sx?$/,
-    use: ['@svgr/webpack'],
+    use: ['@svgr/webpack']
   }
 
   const fileLoader = {
     test: /\.(png|jpe?g|gif|woff2|woff)$/i,
     use: [
       {
-        loader: 'file-loader',
-      },
-    ],
+        loader: 'file-loader'
+      }
+    ]
   }
 
   return [
@@ -59,6 +59,6 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
     typescriptsLoader,
     cssLoader,
     svgLoader,
-    fileLoader,
+    fileLoader
   ]
 }

@@ -1,7 +1,7 @@
-import { useTranslation } from "react-i18next"
+import { useTranslation } from 'react-i18next'
 
-export default function Main() {
-  const {t} = useTranslation('main')
+export default function Main () {
+  const { t } = useTranslation('main')
 
   return (
     <div>
