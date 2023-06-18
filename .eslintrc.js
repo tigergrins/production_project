@@ -5,7 +5,8 @@ module.exports = {
   },
   extends: [
     'standard-with-typescript',
-    'plugin:react/recommended'
+    'plugin:react/recommended',
+    'plugin:i18next/recommended'
   ],
   parserOptions: {
     project: './tsconfig.json',
@@ -13,7 +14,8 @@ module.exports = {
     sourceType: 'module'
   },
   plugins: [
-    'react'
+    'react',
+    'i18next'
   ],
   rules: {
     'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
@@ -24,7 +26,8 @@ module.exports = {
     '@typescript-eslint/naming-convention': 'off',
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
-    'no-shadow': 'off'
+    'no-shadow': 'off',
+    'i18next/no-literal-string': ['error', {markupOnly: true}]
   },
   globals: {
     __IS_DEV__: true

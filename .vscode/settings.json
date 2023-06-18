@@ -3,7 +3,9 @@
     "public/locales",
     "src/shared/config/i18n"
   ],
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  },
+  "stylelint.enable": true,
+  "css.validate": false,
+  "less.validate": false,
+  "scss.validate": false,
+  "stylelint.validate": ["css", "scss"]
 }
