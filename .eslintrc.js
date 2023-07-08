@@ -1,7 +1,8 @@
 module.exports = {
   env: {
     browser: true,
-    es2021: true
+    es2021: true,
+    jest: true
   },
   extends: [
     'standard-with-typescript',
@@ -18,7 +19,12 @@ module.exports = {
     'i18next'
   ],
   rules: {
-    'react/jsx-filename-extension': [2, { extensions: ['.js', '.jsx', '.ts', '.tsx'] }],
+    'react/jsx-filename-extension': [
+      2,
+      {
+        extensions: ['.js', '.jsx', '.ts', '.tsx']
+      }
+    ],
     'react/react-in-jsx-scope': 'off',
     'no-unused-vars': 'warn',
     '@typescript-eslint/explicit-function-return-type': 'off',
@@ -27,7 +33,8 @@ module.exports = {
     '@typescript-eslint/strict-boolean-expressions': 'off',
     '@typescript-eslint/ban-ts-comment': 'off',
     'no-shadow': 'off',
-    'i18next/no-literal-string': ['error', {markupOnly: true}]
+    'i18next/no-literal-string': ['error', { markupOnly: true }],
+    'max-len': ['error', { ignoreComments: true, code: 100 }]
   },
   globals: {
     __IS_DEV__: true
