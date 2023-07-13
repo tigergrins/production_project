@@ -1,5 +1,6 @@
 {
   "main": "Main",
   "about": "About",
-  "loading": "Loading..."
+  "loading": "Loading...",
+  "pageNotFound": "Page not found..."
 }

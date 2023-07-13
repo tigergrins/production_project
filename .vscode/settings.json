@@ -7,5 +7,15 @@
   "css.validate": false,
   "less.validate": false,
   "scss.validate": false,
-  "stylelint.validate": ["css", "scss"]
+  "stylelint.validate": ["css", "scss"],
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "stylelint.config": {
+    "rules": {
+        "at-rule-name-case": "lower",
+        "at-rule-name-space-after": "always-single-line",
+        "at-rule-semicolon-newline-after": "always",
+    }
+  }
 }
