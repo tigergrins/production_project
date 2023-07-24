@@ -1,3 +1,4 @@
+import { BugButton } from 'app/providers/ErrorBoundary/ui/BugButton'
 import { useTranslation } from 'react-i18next'
 
 export default function Main () {
@@ -5,6 +6,7 @@ export default function Main () {
 
   return (
     <div>
+      <BugButton/>
       {t('main')}
     </div>
   )

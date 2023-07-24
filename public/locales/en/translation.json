@@ -2,5 +2,7 @@
   "main": "Main",
   "about": "About",
   "loading": "Loading...",
-  "pageNotFound": "Page not found..."
+  "pageNotFound": "Page not found...",
+  "errorWasHappened": "Oh, error was happened",
+  "throwError": "Throw error"
 }
