@@ -14,7 +14,7 @@ jobs:
 
     steps:
       - name: Setup Node.js environment ${{ matrix.node }}
-        uses: actions/setup-node@v1.4.3
+        uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node }}
       - name: Checkout master branch
