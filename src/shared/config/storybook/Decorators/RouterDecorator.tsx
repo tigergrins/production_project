@@ -1,10 +1,10 @@
-import { Story } from '@storybook/react'
+import { type Story } from '@storybook/react'
 import { BrowserRouter } from 'react-router-dom'
 
 export const RouterDecorator = (story: () => Story) => {
-	return (
+  return (
 		<BrowserRouter>
 			{story()}
 		</BrowserRouter>
-	)
+  )
 }

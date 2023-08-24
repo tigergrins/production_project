@@ -9,10 +9,10 @@ interface NavbarProps {
 
 export const Navbar = (props: NavbarProps) => {
   const { t } = useTranslation()
-
+	const Logo = 'Logo'
   return (
     <div className={classNames(cls.Navbar, {}, [props.className ?? ''])}>
-      <div className='logo'>Logo</div>
+      <div className='logo'>{Logo}</div>
       <div className={cls.links}>
         <AppLink
           to='/'

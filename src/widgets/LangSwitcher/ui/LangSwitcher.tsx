@@ -27,7 +27,7 @@ export const LangSwitcher = (props: LangSwitcherProps) => {
       <Button
         theme={ThemeButton.CLEAR}
         onClick={() => { toggle(Lang.RU) }}
-				style={{color: 'var(--inverted-primary-color)'}}
+				style={{ color: 'var(--inverted-primary-color)' }}
       >
           {langRu}
       </Button>
@@ -37,7 +37,7 @@ export const LangSwitcher = (props: LangSwitcherProps) => {
       <Button
         theme={ThemeButton.CLEAR}
         onClick={() => { toggle(Lang.EN) }}
-				style={{color: 'var(--inverted-primary-color)'}}
+				style={{ color: 'var(--inverted-primary-color)' }}
       >
         {langEn}
       </Button>

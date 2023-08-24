@@ -1,35 +1,34 @@
-import React from 'react';
-import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { ThemeDecorator } from 'shared/config/storybook/Decorators/ThemeDecorator';
-import { Theme } from 'app/providers/ThemeProviders';
-import { AppLink, AppLinkTheme } from './AppLink';
-
+import React from 'react'
+import { type ComponentStory, type ComponentMeta } from '@storybook/react'
+import { ThemeDecorator } from 'shared/config/storybook/Decorators/ThemeDecorator'
+import { Theme } from 'app/providers/ThemeProviders'
+import { AppLink, AppLinkTheme } from './AppLink'
 
 export default {
   title: 'shared/AppLink',
   component: AppLink,
   argTypes: {
-    backgroundColor: { control: 'color' },
-  },
-} as ComponentMeta<typeof AppLink>;
+    backgroundColor: { control: 'color' }
+  }
+} as ComponentMeta<typeof AppLink>
 
-const Template: ComponentStory<typeof AppLink> = (args) => <AppLink {...args}/>;
+const Template: ComponentStory<typeof AppLink> = (args) => <AppLink {...args}/>
 
-export const Primary = Template.bind({});
+export const Primary = Template.bind({})
 Primary.args = {
-	children: 'Text',
+  children: 'Text',
   theme: AppLinkTheme.PRIMARY
-};
+}
 
-export const PrimaryDark = Template.bind({});
+export const PrimaryDark = Template.bind({})
 PrimaryDark.args = {
-	children: 'Text',
+  children: 'Text',
   theme: AppLinkTheme.PRIMARY
-};
+}
 PrimaryDark.decorators = [ThemeDecorator(Theme.DARK)]
 
-export const Inverted = Template.bind({});
+export const Inverted = Template.bind({})
 Primary.args = {
-	children: 'Text',
+  children: 'Text',
   theme: AppLinkTheme.INVERTED
-};
+}
