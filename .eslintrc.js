@@ -42,13 +42,7 @@ module.exports = {
 		}],
 		'comma-dangle': ['error', 'only-multiline'],
 		indent: 'off',
-		'react/display-name': [
-			1,
-			{
-				"ignoreTranspilerName": true,
-				"checkContextObjects": false
-			}
-		]
+		'react/display-name': 'off'
 	},
 	globals: {
 		__IS_DEV__: true

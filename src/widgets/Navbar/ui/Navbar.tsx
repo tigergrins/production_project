@@ -14,18 +14,7 @@ export const Navbar = (props: NavbarProps) => {
     <div className={classNames(cls.Navbar, {}, [props.className ?? ''])}>
       <div className='logo'>{Logo}</div>
       <div className={cls.links}>
-        <AppLink
-          to='/'
-          theme={AppLinkTheme.INVERTED}
-        >
-          {t('main')}
-        </AppLink>
-        <AppLink
-          to='/about'
-          theme={AppLinkTheme.INVERTED}
-        >
-          {t('about')}
-        </AppLink>
+        /
       </div>
     </div>
   )
