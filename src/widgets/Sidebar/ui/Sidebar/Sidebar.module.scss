@@ -21,41 +21,39 @@
 }
 
 .collapseBtn {
-	position: absolute;
-	bottom: 32px;
-	right: -32px;
+  position: absolute;
+  bottom: 32px;
+  right: -32px;
 }
 
 .items {
-	display: flex;
-	flex-direction: column;
-
-	padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
 }
 
 .item {
-	display: flex;
-	align-items: center;
-
-	padding: 0.5rem;
-	white-space: nowrap;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  white-space: nowrap;
 }
 
 .icon {
-	fill: var(--inverted-primary-color);
+  fill: var(--inverted-primary-color);
 }
 
 .link {
-	opacity: 1;
-	margin-left: 1rem;
+  opacity: 1;
+  margin-left: 1rem;
 }
 
 .collapsed {
   width: var(--sidebar-width-collapsed);
 
-	.link {
-		opacity: 0;
-		transition: 0.2s opacity;
-		width: 0;
-	}
+  .link {
+    opacity: 0;
+    transition: 0.2s opacity;
+    width: 0;
+  }
 }
