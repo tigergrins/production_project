@@ -4,5 +4,6 @@
   "loading": "Загрузка...",
   "pageNotFound": "Страница не найдена...",
   "errorWasHappened": "Ой, случилась ошибка",
-  "throwError": "Прокинуть ошибку"
+  "throwError": "Прокинуть ошибку",
+  "logIn": "Войти"
 }

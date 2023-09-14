@@ -53,8 +53,9 @@ export const Sidebar = (props: SidebarProps) => {
     >
 			<div className={cls.items}>
 				{
-					pages.map(page => (
+					pages.map((page, index) => (
 						<AppLink
+						key={`app-link-${index}`}
 	          to={page.route}
 	          theme={AppLinkTheme.INVERTED}
 						className={cls.item}

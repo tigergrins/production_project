@@ -19,7 +19,9 @@ module.exports = {
 	plugins: [
 		'react',
 		'@typescript-eslint',
-		'i18next'],
+		'i18next',
+		'react-hooks'
+	],
 	rules: {
 		'react/jsx-filename-extension': [2, {
 			extensions: ['.js', '.jsx', '.ts', '.tsx']
@@ -42,15 +44,18 @@ module.exports = {
 		}],
 		'comma-dangle': ['error', 'only-multiline'],
 		indent: 'off',
-		'react/display-name': 'off'
+		'react/display-name': 'off',
+		'react-hooks/rules-of-hooks': 'error',
+    'react-hooks/exhaustive-deps': 'error'
 	},
 	globals: {
 		__IS_DEV__: true
 	},
 	overrides: [{
-		files: ['**/src/**/*.test.{ts,tsx}'],
+		files: ['**/src/**/*.{stories,test}.{ts,tsx}'],
 		rules: {
-			'i18next/no-literal-string': 'off'
+			'i18next/no-literal-string': 'off',
+			'max-len': 'off'
 		}
 	}]
 }
