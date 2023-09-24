@@ -5,5 +5,6 @@
   "pageNotFound": "Page not found...",
   "errorWasHappened": "Oh, error was happened",
   "throwError": "Throw error",
-  "logIn": "Log in"
+  "logIn": "Log in",
+  "value": "Value"
 }
