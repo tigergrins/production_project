@@ -13,6 +13,7 @@ export function useTheme (): UseThemeResult {
     const newTheme = theme === Theme.DARK ? Theme.LIGHT : Theme.DARK
     typeof setTheme === 'function' && setTheme(newTheme)
     setThemeLS(newTheme)
+		document.body.className = newTheme
   }
 
   return {
