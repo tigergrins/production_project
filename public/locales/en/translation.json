@@ -6,5 +6,9 @@
   "errorWasHappened": "Oh, error was happened",
   "throwError": "Throw error",
   "logIn": "Log in",
-  "value": "Value"
+  "value": "Value",
+	"username": "Username",
+	"enterUsername": "Enter your username",
+	"password": "Password",
+	"enterPassword": "Enter your password"
 }

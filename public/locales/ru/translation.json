@@ -6,5 +6,9 @@
   "errorWasHappened": "Ой, случилась ошибка",
   "throwError": "Прокинуть ошибку",
   "logIn": "Войти",
-  "value": "Значение"
+  "value": "Значение",
+	"username": "Имя пользователя",
+	"enterUsername": "Введите имя",
+	"password": "Пароль",
+	"enterPassword": "Введите пароль"
 }
