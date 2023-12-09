@@ -5,10 +5,13 @@
   "pageNotFound": "Страница не найдена...",
   "errorWasHappened": "Ой, случилась ошибка",
   "throwError": "Прокинуть ошибку",
-  "logIn": "Войти",
+  "login": "Войти",
+  "logout": "Выйти",
   "value": "Значение",
 	"username": "Имя пользователя",
 	"enterUsername": "Введите имя",
 	"password": "Пароль",
-	"enterPassword": "Введите пароль"
+	"enterPassword": "Введите пароль",
+	"loginForm": "Форма авторизации",
+	"wrongLoginOrPassword": "Вы ввели неверный логин или пароль"
 }

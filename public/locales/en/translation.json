@@ -5,10 +5,13 @@
   "pageNotFound": "Page not found...",
   "errorWasHappened": "Oh, error was happened",
   "throwError": "Throw error",
-  "logIn": "Log in",
+  "login": "Log in",
+	"logout": "Log out",
   "value": "Value",
 	"username": "Username",
 	"enterUsername": "Enter your username",
 	"password": "Password",
-	"enterPassword": "Enter your password"
+	"enterPassword": "Enter your password",
+	"loginForm": "Auth form",
+	"wrongLoginOrPassword": "You are using a wrong login or password"
 }
