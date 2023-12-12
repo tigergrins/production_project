@@ -16,7 +16,7 @@ export const Navbar = (props: NavbarProps) => {
   const { t } = useTranslation()
 	const athData = useSelector(getUserAuthData)
 	const dispatch = useDispatch()
-console.log('isAuthModal', isAuthModal)
+
 	const onCloseModal = useCallback(() => {
 		setIsAuthModal(false)
 	}, [])
@@ -49,9 +49,9 @@ console.log('isAuthModal', isAuthModal)
         {t('login')}
       </Button>
 
-			<LoginModal isOpen={isAuthModal}
-									onClose={onCloseModal}
-			/>
+			{isAuthModal && <LoginModal isOpen={isAuthModal}
+																	onClose={onCloseModal}
+			/>}
     </div>
   )
 }
