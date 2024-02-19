@@ -2,6 +2,7 @@ import { classNames } from 'shared/lib/classNames/classNames'
 import cls from './LangSwitcher.module.scss'
 import { useTranslation } from 'react-i18next'
 import { Button, ButtonTheme } from 'shared/ui/Button/Button'
+import { memo } from 'react'
 
 export enum Lang {
   RU = 'ru',
@@ -12,7 +13,7 @@ interface LangSwitcherProps {
   className?: string
 }
 
-export const LangSwitcher = (props: LangSwitcherProps) => {
+export const LangSwitcher = memo((props: LangSwitcherProps) => {
   const { i18n } = useTranslation()
 
   const toggle = (lang: Lang) => {
@@ -43,4 +44,4 @@ export const LangSwitcher = (props: LangSwitcherProps) => {
       </Button>
     </div>
   )
-}
+})

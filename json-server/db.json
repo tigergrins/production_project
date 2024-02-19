@@ -5,7 +5,16 @@
   "comments": [
     { "id": "1", "body": "some comment", "postId": 1 }
   ],
-  "profile": { "name": "typicode" },
+  "profile": {
+		"name": "typicode",
+		"lastname": "typicode",
+		"age": 23,
+		"country": "Russia",
+		"currency": "RUB",
+		"city": "Moscow",
+		"username": "admin",
+		"avatar": "https://www.salesforce.com/blog/wp-content/uploads/sites/2/2021/06/2021-12-360BlogHeader-SalesforceAdmin.V3-1500x844-1.png?w=768&h=432"
+	},
 	"users": [
 		{
 			"id": "1",
