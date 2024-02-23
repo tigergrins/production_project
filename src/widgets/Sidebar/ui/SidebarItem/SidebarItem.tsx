@@ -3,7 +3,7 @@ import cls from './SidebarItem.module.scss'
 import { AppLink, AppLinkTheme } from 'shared/ui/AppLink/AppLink'
 import { useTranslation } from 'react-i18next'
 import { memo } from 'react'
-import { classNames } from 'shared/lib/classNames/classNames'
+import { Mods, classNames } from 'shared/lib/classNames/classNames'
 
 interface SidebarItemProps {
 	item: SidebarItemType
@@ -18,7 +18,7 @@ export const SidebarItem = memo((props: SidebarItemProps) => {
 
 	const { t } = useTranslation()
 
-	const mods: Record<string, boolean> = {
+	const mods: Mods = {
 		[cls.collapsed]: collapsed,
 	}
 

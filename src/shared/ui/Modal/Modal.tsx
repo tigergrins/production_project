@@ -1,4 +1,4 @@
-import { classNames } from 'shared/lib/classNames/classNames'
+import { Mods, classNames } from 'shared/lib/classNames/classNames'
 import cls from './Modal.module.scss'
 import { ReactNode, useCallback, useEffect, useRef, useState } from 'react'
 import { Portal } from '../Portal/Portal'
@@ -50,7 +50,7 @@ export const Modal = (props: ModalProps) => {
 		}
 	}, [isOpened, onKeyDown])
 
-	const mods: Record<string, boolean> = {
+	const mods: Mods = {
 		[cls.opened]: isOpened,
 		[cls.isClosing]: isClosing,
 	}

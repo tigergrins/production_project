@@ -13,5 +13,6 @@
 	"password": "Password",
 	"enterPassword": "Enter your password",
 	"loginForm": "Auth form",
-	"wrongLoginOrPassword": "You are using a wrong login or password"
+	"wrongLoginOrPassword": "You are using a wrong login or password",
+	"profile": "Profile"
 }
